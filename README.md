@@ -1,6 +1,6 @@
-# Airbnb JavaScript Style Guide() {
+# InterNations JavaScript Style Guide
 
-*A mostly reasonable approach to JavaScript*
+Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 
 ## Table of Contents
