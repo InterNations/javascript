@@ -1084,7 +1084,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     this._firstName = 'Panda';
     ```
 
-  - When saving a reference to `this` use `_this`.
+  - When saving a reference to `this` use `that`.
 
     ```javascript
     // bad
@@ -1097,19 +1097,20 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
     // bad
     function() {
+      var _this = this;
+      return function() {
+        console.log(_this);
+      };
+    }
+    
+    // good
+    function() {
       var that = this;
       return function() {
         console.log(that);
       };
     }
 
-    // good
-    function() {
-      var _this = this;
-      return function() {
-        console.log(_this);
-      };
-    }
     ```
 
 **[⬆ back to top](#table-of-contents)**
