@@ -31,7 +31,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 ## Types
 
-  - **Primitives**: When you access a primitive type you work directly on its value
+  - **Primitives**: When you access a primitive type you work directly on its value.
 
     + `string`
     + `number`
@@ -47,7 +47,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
     console.log(foo, bar); // => 1, 9
     ```
-  - **Complex**: When you access a complex type you work on a reference to its value
+  - **Complex**: When you access a complex type you work on a reference to its value.
 
     + `object`
     + `array`
@@ -76,7 +76,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     var item = {};
     ```
 
-  - Don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61)
+  - Don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61).
 
     ```javascript
     // bad
@@ -115,7 +115,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 ## Arrays
 
-  - Use the literal syntax for array creation
+  - Use the literal syntax for array creation.
 
     ```javascript
     // bad
@@ -168,7 +168,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 ## Strings
 
-  - Use single quotes `''` for strings
+  - Use single quotes `''` for strings.
 
     ```javascript
     // bad
@@ -185,7 +185,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     ```
 
   - Strings longer than 80 characters should be written across multiple lines using string concatenation.
-  - Note: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40)
+  - Note: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40).
 
     ```javascript
     // bad
@@ -547,7 +547,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) by [Ben Cherry](http://www.adequatelygood.com/)
+  - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) by [Ben Cherry](http://www.adequatelygood.com/).
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -596,7 +596,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll
+  - For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -696,7 +696,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
   - Prefixing your comments with `FIXME` or `TODO` helps other developers quickly understand if you're pointing out a problem that needs to be revisited, or if you're suggesting a solution to the problem that needs to be implemented. These are different than regular comments because they are actionable. The actions are `FIXME -- need to figure this out` or `TODO -- need to implement`.
 
-  - Use `// FIXME:` to annotate problems
+  - Use `// FIXME:` to annotate problems.
 
     ```javascript
     function Calculator() {
@@ -708,7 +708,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - Use `// TODO:` to annotate solutions to problems
+  - Use `// TODO:` to annotate solutions to problems.
 
     ```javascript
     function Calculator() {
@@ -725,7 +725,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 ## Whitespace
 
-  - Use soft tabs set to 4 spaces
+  - Use soft tabs set to 4 spaces.
 
     ```javascript
     // bad
@@ -1032,7 +1032,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - Use camelCase when naming objects, functions, and instances
+  - Use camelCase when naming objects, functions, and instances.
 
     ```javascript
     // bad
@@ -1051,7 +1051,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     });
     ```
 
-  - Use PascalCase when naming constructors or classes
+  - Use PascalCase when naming constructors or classes.
 
     ```javascript
     // bad
@@ -1073,7 +1073,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     });
     ```
 
-  - Use a leading underscore `_` when naming private properties
+  - Use a leading underscore `_` when naming private properties.
 
     ```javascript
     // bad
@@ -1118,8 +1118,8 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 ## Accessors
 
-  - Accessor functions for properties are not required
-  - If you do make accessor functions use getVal() and setVal('hello')
+  - Accessor functions for properties are not required.
+  - If you do make accessor functions use getVal() and setVal('hello').
 
     ```javascript
     // bad
@@ -1135,7 +1135,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     dragon.setAge(25);
     ```
 
-  - If the property is a boolean, use isVal() or hasVal()
+  - If the property is a boolean, use isVal() or hasVal().
 
     ```javascript
     // bad
