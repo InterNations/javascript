@@ -1291,10 +1291,10 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
     ```javascript
     // bad
-    var sidebar = $('.sidebar');
+    var sidebar = $('.js-sidebar');
 
     // good
-    var $sidebar = $('.sidebar');
+    var $sidebar = $('.js-sidebar');
     ```
 
   - Cache jQuery lookups.
@@ -1302,18 +1302,18 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     ```javascript
     // bad
     function setSidebar() {
-      $('.sidebar').hide();
+      $('.js-sidebar').hide();
 
       // ...stuff...
 
-      $('.sidebar').css({
+      $('.js-sidebar').css({
         'background-color': 'pink'
       });
     }
 
     // good
     function setSidebar() {
-      var $sidebar = $('.sidebar');
+      var $sidebar = $('.js-sidebar');
       $sidebar.hide();
 
       // ...stuff...
@@ -1324,24 +1324,36 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
+  - For DOM queries use `js-` classes instead of elements or other style-related classes.
+
+    ```javascript
+    // bad
+    $('.sidebar ul').hide();
+    
+    // good
+    $('.js-list').hide();
+    
+    // good
+    $('.js-sidebar .js-list').hide();
+   ```
+
   - Use `find` with scoped jQuery object queries.
 
     ```javascript
     // bad
-    $('ul', '.sidebar').hide();
+    $('ul', '.js-sidebar').hide();
 
     // bad
-    $('.sidebar').find('ul').hide();
+    $('.js-sidebar').find('ul').hide();
 
     // good
-    $('.sidebar ul').hide();
+    $('.js-sidebar .js-list').hide();
 
     // good
-    $('.sidebar > ul').hide();
+    $('.js-sidebar > .js-list').hide();
 
     // good
-    $sidebar.find('ul').hide();
+    $sidebar.find('.js-list').hide();
     ```
 
 **[⬆ back to top](#table-of-contents)**
