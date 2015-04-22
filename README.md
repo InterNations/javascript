@@ -357,7 +357,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
   - Use one `var` declaration per variable.
     It's easier to add new variable declarations this way, and you never have
     to worry about swapping out a `;` for a `,` or introducing punctuation-only
-    diffs. 
+    diffs.
 
     ```javascript
     // bad
@@ -1100,7 +1100,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
         console.log(_this);
       };
     }
-    
+
     // good
     function() {
       var that = this;
@@ -1281,6 +1281,20 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     });
     ```
 
+  - When triggering events from the view, pass View as a namespace. For example, instead of:
+
+    ```js
+    // bad
+    this.trigger('update', { user: this.model });
+    ```
+
+    prefer:
+
+    ```js
+    // good
+    this.trigger('User:update', { user: this.model });
+    ```
+
   **[⬆ back to top](#table-of-contents)**
 
 ## jQuery
@@ -1327,10 +1341,10 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     ```javascript
     // bad
     $('.sidebar ul').hide();
-    
+
     // good
     $('.js-list').hide();
-    
+
     // good
     $('.js-sidebar .js-list').hide();
    ```
