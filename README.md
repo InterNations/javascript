@@ -1281,7 +1281,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     });
     ```
 
-  - When triggering events from the view, pass View as a namespace. For example, instead of:
+  - When triggering events from the view, pass View as a namespace. View namespace should start with capital letter. For example, instead of:
 
     ```js
     // bad
